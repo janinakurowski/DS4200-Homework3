@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- keep these so your Part 2 plots work on the home page too -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script defer src="templete.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container">
+        <a class="brand" href="index.html">Janina</a>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="interests.html">Interests</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+  
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Welcome to My Website</h1>
+          <p>
+            I enjoy the place where health science and data meet. I like to turn messy information into
+            clear stories that help people decide what to do next. I practice this in classes and group
+            projects. I focus on clean structure, careful naming, and writing that anyone on my team can read.
+            I keep my work grounded in real needs and I aim for results that are easy to understand.
+            I am learning more about evaluation so I can tell when something worked and why. I care about
+            simple visuals that guide the eye and I keep the focus on the question. Outside of school I care
+            for a few plants and I enjoy quiet reading time. This site collects simple ideas and small project
+            updates. Thank you for visiting and I hope you find something useful here.
+          </p>
+        </div>
+        <figure class="media">
+          <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=1200&auto=format&fit=crop" alt="Laptop with notebook on a desk">
+          <figcaption>Tools I enjoy using for thoughtful work</figcaption>
+        </figure>
+      </section>
+  
+      <section class="section">
+        <h2>What you will find here</h2>
+        <ul class="nice-list">
+          <li>Notes on clear health communication</li>
+          <li>Small data examples that answer simple questions</li>
+          <li>Links that shaped how I work</li>
+        </ul>
+      </section>
+  
+      <!-- Part 2 plots keep working because you already have templete.js -->
+      <section class="section">
+        <h2>Homework 3 plots</h2>
+        <div id="boxplot"></div>
+        <div id="barplot"></div>
+        <div id="lineplot"></div>
+      </section>
+  
+      <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p class="contact-links">
+          <a href="mailto:janina@example.com">Email</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </section>
+    </main>
+  
+    <footer class="site-footer">
+      <div class="container"><small>© 2025 Janina. Built for DS4200.</small></div>
+    </footer>
+  </body>
+  </html>

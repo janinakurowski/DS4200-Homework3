@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interests</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More | Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="site-header">
-    <nav class="container">
-      <a class="brand" href="index.html">Janina</a>
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="interests.html">Interests</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-    </nav>
+    <div class="container header-inner">
+      <a class="brand" href="index.html">My Site</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="test.html" class="nav-link">More</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h2>Projects and interests</h2>
-      <p>
-        I like work that brings care to people and structure to ideas. Public health asks us to listen and
-        data science asks us to test our claims. I like the place where these meet. I focus on careful
-        questions, a clean plan for data, and a plain summary at the end. I enjoy the moment when a simple
-        figure makes the result feel helpful. I try to write for a busy reader and I avoid jargon that adds
-        no value. I also enjoy group work and I put care into naming, comments, and tests so the next step
-        feels easy. I want to keep learning and to build things that make a difference.
-      </p>
-
-      <figure class="media">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Students collaborating around a laptop">
-        <figcaption>Ideas grow when we work together</figcaption>
-      </figure>
-
-      <h3>Simple habits I try to follow</h3>
-      <ul class="nice-list">
-        <li>Write for a person who wants clarity</li>
-        <li>Choose charts that match the question</li>
-        <li>Document choices so future changes are easy</li>
-      </ul>
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <h2 class="h1-sub">Projects and interests</h2>
+        <p>
+          This page holds a few themes that guide my learning and practice. I like work that blends public health with
+          data stories that serve people. I try to write notes that are calm and clear. I want readers to feel welcome
+          even if a topic is new. I am drawn to simple charts that show just what the reader needs to see. I also care
+          about trustworthy sources and the way we present them. Good citations invite readers to check claims and form
+          their own view. I believe the best writing is kind to the reader and precise about methods.
+        </p>
+        <p>
+          I keep a small area below where I can test simple visual ideas with JavaScript and D3. It is a sandbox for
+          learning. The goal is not a perfect chart. The goal is to practice one small idea and to see how the code
+          connects to what appears on the screen. I will update this over time. For now it is only a placeholder. If you
+          are curious about the details or want to share a trick that helped you, please send a note through the contact
+          section on the home page.
+        </p>
+        <ul class="nice-list">
+          <li>Public health questions focused on prevention and root causes</li>
+          <li>Clear, kind writing that respects the reader</li>
+          <li>Simple web pages that work on phones and laptops</li>
+          <li>Reproducible steps to help others repeat the work</li>
+          <li>Open conversation and shared learning</li>
+        </ul>
+        <figure class="figure">
+          <img src="Building.jpg" alt="Boy building with blocks.">
+          <figcaption>Practice makes progress. Small steps add up.</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container"><small>© 2025 Janina. Built for DS4200.</small></div>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Janina Kurowski</p>
+    </div>
   </footer>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="template.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
+
 </html>
